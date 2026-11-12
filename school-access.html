@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Parent Access — MCM Photography</title>
+    <meta name="description" content="Access your learner gallery and order school photography packages through the MCM Photography parent portal.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.2s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <img src="img/logo.png" alt="MCM Photography Logo" style="max-height: 60px;" class="me-2">
+            <span class="navbar-brand-text">MCM PHOTOGRAPHY</span>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="school-photography.html" class="nav-item nav-link active">School Photography</a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-primary py-2 px-4 mx-3 d-none d-lg-block d-flex align-items-center">
+                <span class="h1 text-white mb-0">MCM PHOTOGRAPHY</span>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="portfolio.html" class="nav-item nav-link">Gallery</a>
+                <a href="contact.html" class="nav-item nav-link">Get In Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-xxl py-5 school-page-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="teacher-card">
+                        <p class="text-primary text-uppercase mb-2">Parent access</p>
+                        <h1 class="display-6 mb-3">Access your learner gallery</h1>
+                        <p class="mb-4">Enter the learner reference code and private PIN supplied by the school to view your learner’s photography gallery.</p>
+
+                        <form id="parentAccessForm" class="school-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="learnerRef" name="learnerRef" placeholder="Learner reference code" required>
+                                        <label for="learnerRef">Learner reference code</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="pin" name="pin" placeholder="Private PIN" required>
+                                        <label for="pin">Private PIN</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mt-4">
+                                <button type="submit" class="btn btn-primary py-3 px-5">Access My Photos</button>
+                                <p class="small text-muted mb-0">Example access: MCM-2401 / 1234</p>
+                            </div>
+                            <p class="mt-3 mb-0 text-danger" data-access-status></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="info-card h-100">
+                        <div class="icon-wrap"><i class="bi bi-qr-code"></i></div>
+                        <h3>Use the QR code</h3>
+                        <p>Parents can scan the QR code on the school communication, then enter their secure PIN to access the gallery.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="info-card h-100">
+                        <div class="icon-wrap"><i class="bi bi-lock"></i></div>
+                        <h3>Private and personal</h3>
+                        <p>Every learner access area is individually authenticated and designed to feel reassuring and secure.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="info-card h-100">
+                        <div class="icon-wrap"><i class="bi bi-card-checklist"></i></div>
+                        <h3>Order with confidence</h3>
+                        <p>Parents can select images, compare package inclusions, and complete a clear front-end checkout experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid bg-dark text-white border-top border-secondary px-0">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; <a class="text-primary" href="index.html">MCM Photography</a> · All rights reserved.</p>
+            </div>
+            <div class="py-4 px-5 text-center text-md-end">
+                <p class="mb-0">Cape Town • School photography • Parent portal</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/school-platform.js"></script>
+</body>
+</html>
